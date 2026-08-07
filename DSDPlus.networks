@@ -1,0 +1,26 @@
+; DSD+ networks file
+;
+; you can edit this file while DSD+ is running
+;
+; line format: protocol, networkID, "network name"[, TIIIareaLength]
+;
+; protocols:
+;
+;  D-Star
+;  IDAS
+;  NEXEDGE48
+;  NEXEDGE96
+;  dPMR
+;  DMR
+;  Cap+
+;  Con+
+;  TIII
+;  P25
+;  ProVoice
+
+P25, BEE00.942, "PA STARNet P25"
+P25, BEE00.348, "OH MARCS-IP"
+P25, BEE00.152, ICORRS
+P25, BEE00.170, "WV SIRN"
+P25, 92715.002, "American Electric Power 002"
+P25, 92715.1F6, "American Electric Power 1F6"

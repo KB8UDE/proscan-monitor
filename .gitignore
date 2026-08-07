@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+
+.build_venv/
+.build_pyinstaller/
+.pyinstaller_work/
+.pyinstaller_spec/
+.wheels/
+
+release_build*/
+release_package*/
+
+p25_radio_dashboard_config.json
