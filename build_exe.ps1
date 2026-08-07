@@ -15,9 +15,9 @@ $PackageRoot = Join-Path $Root "release_package"
 $Package = Join-Path $PackageRoot $Name
 $Zip = Join-Path $PackageRoot "$($Name)_$Version.zip"
 
-$CodexPython = Join-Path $HOME ".cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe"
-if (Test-Path $CodexPython) {
-    $BasePython = $CodexPython
+$ConfiguredPython = $env:PYTHON
+if ($ConfiguredPython -and (Test-Path $ConfiguredPython)) {
+    $BasePython = $ConfiguredPython
 } else {
     $BasePython = "python"
 }
